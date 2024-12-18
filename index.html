@@ -3,69 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Littleone Fables - Video Carousel</title>
+    <title>Littleone Fables</title>
     <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <h1>Welcome to Littleone Fables</h1>
-        <p>Whimsical tales to spark imagination</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#videos">Featured Videos</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="banner">
+        <div class="logo-container">
+            <img src="C:\Users\Dell\Desktop\ChatGPT\logo.jpg" alt="Littleone Fables Logo" class="logo">
+        </div>
+        <!-- <h1>Littleone Fables</h1> -->
+        <p>🌟 **Welcome to Little One Fables!** 🌟
+
+            Discover a magical world of bedtime stories, fables, and adventures crafted just for kids and families! Here at *Little One Fables*, we bring heartwarming tales to life with enchanting characters, valuable lessons, and gentle storytelling. Perfect for bedtime, quiet moments, or anytime you want a little bit of wonder in your day.
+            
+            From talking animals and wise old trees to brave little heroes, each story is designed to inspire kindness, imagination, and joy in every child. Join us on this journey and let’s make storytime unforgettable!
+            
+            🌈 **Subscribe** for weekly tales filled with friendship, courage, and imagination. Don’t forget to like and share to spread the magic!
+            </p>
+            <br>
+        <a href="https://www.youtube.com/@LittleoneFables" target="_blank" class="button">Visit YouTube Channel</a>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Littleone Fables</h2>
-        <p>
-            🌟 **Welcome to Little One Fables!** 🌟
-
-Discover a magical world of bedtime stories, fables, and adventures crafted just for kids and families! Here at *Little One Fables*, we bring heartwarming tales to life with enchanting characters, valuable lessons, and gentle storytelling. Perfect for bedtime, quiet moments, or anytime you want a little bit of wonder in your day.
-
-From talking animals and wise old trees to brave little heroes, each story is designed to inspire kindness, imagination, and joy in every child. Join us on this journey and let’s make storytime unforgettable!
-
-🌈 **Subscribe** for weekly tales filled with friendship, courage, and imagination. Don’t forget to like and share to spread the magic!
-        </p>
-        <br>
-        <a class="button" href="https://www.youtube.com/@LittleoneFables" target="_blank">Visit Our YouTube Channel</a>
+    <!-- Featured Video Section -->
+    <section id="featured-video" class="section">
+        <h2>Featured Video</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/k-GGYbgjvlU" 
+                allowfullscreen 
+                title="Featured Video">
+            </iframe>
+        </div>
     </section>
 
-    <!-- Featured Videos Section -->
-    <section id="videos">
-        <h2>Our Featured Videos</h2>
-        <div class="carousel-container">
-            <div id="video-carousel">
-                <!-- Video 1 -->
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/XFYzlKv3I-s" 
-                    title="Video 1" allowfullscreen></iframe>
-                </div>
-                <!-- Video 2 -->
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/a_T2XuZ1kjw" 
-                    title="Video 2" allowfullscreen></iframe>
-                </div>
-                <!-- Video 3 -->
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/OroCuEAOczU" 
-                    title="Video 3" allowfullscreen></iframe>
-                </div>
+    <!-- Video Playlist Section -->
+    <section id="playlist" class="section">
+        <h2>Watch More Videos</h2>
+        <div class="playlist">
+            <!-- Video 1 -->
+            <div class="playlist-item">
+                <iframe 
+                    src="https://www.youtube.com/embed/OroCuEAOczU" 
+                    allowfullscreen 
+                    title="Video 1">
+                </iframe>
+                <p>Video Title 1</p>
             </div>
-            <!-- Navigation Buttons -->
-            <button id="prev-btn">⮜</button>
-            <button id="next-btn">⮞</button>
+            <!-- Video 2 -->
+            <div class="playlist-item">
+                <iframe 
+                    src="https://www.youtube.com/embed/XFYzlKv3I-s" 
+                    allowfullscreen 
+                    title="Video 2">
+                </iframe>
+                <p>Video Title 2</p>
+            </div>
+            <!-- Video 3 -->
+            <div class="playlist-item">
+                <iframe 
+                    src="https://www.youtube.com/embed/d8ZzdiV7gXE" 
+                    allowfullscreen 
+                    title="Video 3">
+                </iframe>
+                <p>Video Title 3</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
-        <p>Reach out to us for collaborations, suggestions, or just to say hello!</p>
+        <p>For collaborations or inquiries, reach out to us at:</p>
         <p>Email: <a href="mailto:littleonefables@gmail.com">littleonefables@gmail.com</a></p>
     </section>
 

@@ -9,127 +9,126 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+}
+
+h1, h2 {
     text-align: center;
+    color: #333;
 }
 
-/* Header */
-header {
-    background: linear-gradient(135deg, #ff6f61, #ffcc5c);
+p {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Banner Section with Background Image */
+.banner {
+    background: url('Banner.jpg') center/cover no-repeat;
     color: white;
-    padding: 1rem 0;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
 }
 
-header h1 {
-    margin: 0;
+/* Add a semi-transparent overlay to improve readability of text */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: -1; /* Place behind the content */
+}
+
+/* Ensure text/logo remains visible */
+.banner .logo-container {
+    /* margin-bottom: 1rem; */
+    flex-shrink: 0; /* Prevent the logo from resizing */
+    text-align: left; /* Ensure alignment in the container */
+}
+
+.banner .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.banner h1 {
     font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-header p {
+.banner p {
     font-size: 1.2rem;
-    color:rgb(223, 34, 154);
+    margin-bottom: 1rem;
 }
 
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: #3021d4;
+.banner .button {
+    display: inline-block;
+    background-color: white;
+    color: #ff6f61;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.banner .button:hover {
+    background-color: #ffe4cc;
 }
 
-/* Section */
-section {
+
+/* Section Styles */
+.section {
     padding: 2rem;
 }
 
-h2 {
+.section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
     color: #ff6f61;
-    margin-bottom: 1rem;
-    font-size: 2rem;
 }
 
-.button {
-    display: inline-block;
-    background: #ff6f61;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.button:hover {
-    background: #e94e3d;
-}
-
-/* Carousel Container */
-.carousel-container {
-    position: relative;
-    max-width: 700px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#video-carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.video {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-iframe {
-    width: 100%;
+/* Video Container */
+.video-container iframe {
+    width: 80%;
     height: 350px;
     border: none;
     border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
-/* Navigation Buttons */
-#prev-btn, #next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background 0.3s ease;
-    z-index: 10;
+/* Playlist Section */
+.playlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-#prev-btn:hover, #next-btn:hover {
-    background-color: #e94e3d;
+.playlist-item {
+    width: 300px;
+    text-align: center;
 }
 
-#prev-btn {
-    left: 10px;
-}
-
-#next-btn {
-    right: 10px;
+.playlist-item iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+    font-size: 0.9rem;
 }
