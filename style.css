@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff6f61, #ffcc5c);
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color:rgb(223, 34, 154);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #3021d4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section */
+section {
+    padding: 2rem;
+}
+
+h2 {
+    color: #ff6f61;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background: #ff6f61;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #e94e3d;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#video-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.video {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+#prev-btn, #next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    background-color: #e94e3d;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
